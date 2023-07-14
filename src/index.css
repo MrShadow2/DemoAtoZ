@@ -1,0 +1,32 @@
+:root {
+  font-synthesis:;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+::-webkit-scrollbar{
+  height: 8px;
+  width: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  }
+  
+  ::-webkit-scrollbar-track{
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8ex;
+  cursor: pointer;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+  background: orange;
+  border-radius: 1ex;
+  cursor: pointer;
+  }
+
+  a{
+    text-decoration: none;
+  
+  }

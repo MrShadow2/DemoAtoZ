@@ -1,0 +1,23 @@
+
+::-webkit-scrollbar{
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+    }
+    
+    ::-webkit-scrollbar-track{
+    /* background: rgba(255, 255, 255, 1); */
+    border-radius: 1ex;
+    cursor: pointer;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+    background: #06f8d8;
+    border-radius: 1ex;
+    cursor: pointer;
+    }
+  
+    a{
+      text-decoration: none;
+      color: inherit
+    }

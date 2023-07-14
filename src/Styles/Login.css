@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: #d9e6f1;
+}
+
+.login-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+    background-color: #d9e6f1;
+    
+  }
+  .header-log{
+    font-size: 2.5rem;
+    color: #3c556e;
+    text-shadow: 0 0 5px #fff;
+    font-weight: 800;
+
+  }
+  .house-img{
+    width: 600px;
+    height: 500px;
+   
+  }
+  .bike-img{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 68%;
+    left: 10%;
+    animation: moving 2s linear;
+  }
+  @keyframes moving {
+    0% {
+      position: absolute;
+      top: 70%;
+      left: 6%;
+    }
+   
+    100% {
+      position: absolute;
+      top: 68%;
+      left: 10%;
+    }
+  }
+  .sit-img{
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 58%;
+    left: 35%;
+    
+    
+  }
+
+  @keyframes motion {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+ 
+  .neomorphism-card {
+    background-color: #eaf2f8;
+    border-radius: 15px;
+    box-shadow: 8px 8px 16px #a4b9cd, -2px -4px 16px #a9c6de;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 390px;
+    height: 465px;
+    animation: motion 4s infinite;
+    margin-bottom: 1rem;
+  }
+  
+  .neomorphism-card h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    margin-bottom: 0.25rem;
+    
+    font-weight: bold;
+    font-size: 1.5rem;
+    color:#3c556e;
+
+  }
+  
+  .login-input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #eaf2f8;
+    box-shadow: inset 4px 4px 8px #a4b9cd, inset -4px -4px 8px #ffffff;
+    outline: none;
+    width: 250px;
+  }
+  
+  .login{
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #eaf2f8;
+box-shadow: 4px 4px 8px #ffff, -1px -1px 8px #3c556e;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    width: 100px;
+    height: 40px;
+    color: #3c556e;
+    font-size: 1rem;
+  }
+  .dont{
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    color: #3c556e;
+    text-shadow: 0 0 5px #fff;
+    font-weight: 800;
+  }
+  a{
+    text-decoration: none;
+    color: #3c556e;
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+  .login:hover {
+    background-color: #d9e6f1;
+  }
+  @media screen and (max-width: 1084px) {
+    .login-container {
+      
+      gap: 2rem;
+    }
+    .house-img{
+      width: 450px;
+      height: 350px;
+     
+    }
+    .bike-img{
+      width: 150px;
+      height: 100px;
+      position: absolute;
+      top: 68%;
+      left: 10%;
+      animation: moving 2s linear;
+    }
+    .sit-img{
+      width: 250px;
+      height: 200px;
+      position: absolute;
+      top: 55%;
+      left: 30%;
+      
+      
+    }
+    .neomorphism-card {
+      animation: none;
+    }
+  
+  
+  }
+  @media screen and (max-width: 788px) {
+    .login-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .neomorphism-card {
+      animation: none;
+      /* margin-top: 2rem; */
+    }
+    .illustration{
+      margin-top: 8rem;
+    }
+    .bike-img{
+      position: absolute;
+      top: 35%;
+      left: 15%;
+      height: 90px;
+      width: 120px;
+    }
+    .sit-img{
+      position: absolute;
+      top: 25%;
+      left: 39%;
+    }
+    
+  
+    
+  }
+  @media screen and (max-width: 450px) {
+    .illustration{
+      margin-top: 8rem;
+     
+    }
+    .neomorphism-card {
+      width: 380px;
+      height: 450px;
+      margin-bottom: 1rem;
+      
+    }
+  
+    .login-input {
+      width: 200px;
+    }
+  
+    .login {
+      width: 80px;
+    }
+    .sit{
+      width: 150px;
+      height: 120px;
+      position: absolute;
+      top: 22%;
+      left: 35%;
+    }
+    .login-container{
+      margin-left: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 355px) {
+    .illustration{
+      margin-top: 8rem;
+      margin-left: 4rem;
+    }
+    .neomorphism-card {
+      width: 350px;
+      height: 490px;
+      margin-top: 2rem;
+      margin-left: 4.5rem;
+
+    }
+  
+    .login-input {
+      width: 250px;
+    }
+  
+    .login {
+      width: 80px;
+    }
+    .sit{
+      width: 120px;
+      height: 80px;
+      position: absolute;
+      top: 22%;
+      left: 35%;
+    }
+    .bike-img{
+      width: 100px;
+      height: 70px;
+      position: absolute;
+      top: 35%;
+      
+      animation: moving 2s linear;
+    }
+    .login-container{
+      margin-left: 3rem;
+    }
+  }
